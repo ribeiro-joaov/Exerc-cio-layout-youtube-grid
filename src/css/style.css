@@ -1,0 +1,49 @@
+.container {
+  background-color: #f7f7f7;
+  max-width: 900px;
+  display: grid;
+  margin: 30px;
+  grid-template-areas:
+    "main ad1"
+    "main aside-videos";
+  grid-template-columns: 1fr 270px;
+  grid-template-rows: 56px 1fr;
+  gap: 20px;
+  padding: 30px;
+}
+.main {
+  grid-area: main;
+}
+.ad1 {
+  grid-area: ad1;
+}
+.aside-videos {
+  grid-area: aside-videos;
+}
+.main h1 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-top: 12px;
+}
+.main .views {
+  font-size: 14px;
+  margin-top: 9px;
+}
+.main p {
+  font-size: 16px;
+  margin-top: 9px;
+}
+.aside-videos .video {
+  display: flex;
+  gap: 5px;
+  margin-bottom: 15px;
+}
+.aside-videos .video .title {
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+.aside-videos .video p {
+  font-size: 11px;
+  margin-bottom: 5px;
+}
